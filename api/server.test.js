@@ -25,7 +25,7 @@ describe('GET /api/jokes', () => {
   test('returns a status 200 OK', async () => {
     const res = await request(server)
       .get('/api/jokes')
-      .set('Authorization', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0Ijo0LCJ1c2VybmFtZSI6Ik1ld3R3byIsImlhdCI6MTY0MzM0NTMzMCwiZXhwIjoxNjQzNDMxNzMwfQ.bujXX2wW9liVaOFoSrxeKu5FvEm9n-H5azDl3TI1pwY')
+      .set('Authorization', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0Ijo1LCJ1c2VybmFtZSI6InN0YW4iLCJpYXQiOjE2NDg4NTQ3NTcsImV4cCI6MTY0ODk0MTE1N30.oVo_FRluHM0V1SUC6Va1cmLqRJDJ0WDiKWAtkKxjVLw')
     console.log(res)
     expect(res.status).toBe(200)
   })

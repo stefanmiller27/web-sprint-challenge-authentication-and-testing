@@ -1,4 +1,4 @@
-exports.seed = function(knex, Promise) {
+exports.seed = function(knex) {
     // Deletes ALL existing entries and resets ids
     return knex('users')
       .truncate()
